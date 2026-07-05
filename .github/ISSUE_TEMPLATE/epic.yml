@@ -1,15 +1,17 @@
-name: ODTS Epic
-description: Create a new ODTS Epic
+name: ODTS Epic for AMTS
+description: Create a new ODTS Epic for the AMTS project
 title: "[Epic] "
 body:
   - type: markdown
     attributes:
       value: |
-        # ODTS Epic
+        # ODTS Epic for AMTS
 
-        Use this form to create an ODTS Epic.
+        This repository uses ODTS as its agile project-development framework.
 
-        Epics describe foundational workflows, architectural goals, requirements, and long-term implementation directions.
+        Use this form to create an ODTS Epic for AMTS specification, documentation, compatibility, community, or repository work.
+
+        ODTS organizes the work. AMTS remains the specification being developed.
 
   - type: markdown
     attributes:
@@ -17,14 +19,10 @@ body:
         ## Epic Types
 
         ### UserStory
-        Use **UserStory** for workflow-oriented, user-oriented, or process-oriented goals.
-
-        UserStories describe how Origin Developers or User Developers want to work with ODTS.
+        Use **UserStory** for workflow-oriented, adopter-oriented, contributor-oriented, or process-oriented goals.
 
         ### Requirement
-        Use **Requirement** for external technical constraints, system requirements, or implementation prerequisites.
-
-        Requirements describe conditions that exist independently from ODTS workflows.
+        Use **Requirement** for external constraints, specification requirements, compatibility expectations, or repository prerequisites.
 
   - type: dropdown
     id: epic_type
@@ -76,29 +74,29 @@ body:
       required: true
 
   - type: textarea
-    id: expected_bootstrap_evolution
+    id: expected_evolution
     attributes:
-      label: Expected Bootstrap Evolution
-      description: Describe how this Epic may evolve during the bootstrap process
+      label: Expected Evolution
+      description: Describe how this Epic may evolve
       placeholder: |
         1. ...
         2. ...
         3. ...
 
   - type: textarea
-    id: bootstrap_limitations
+    id: limitations
     attributes:
-      label: Bootstrap Limitations
-      description: Describe temporary bootstrap limitations if relevant
-      placeholder: Describe temporary bootstrap limitations
+      label: Limitations
+      description: Describe temporary limitations if relevant
+      placeholder: Describe temporary limitations
 
   - type: textarea
     id: user_story
     attributes:
       label: User Story
-      description: Describe the workflow or developer perspective behind this Epic
+      description: Describe the workflow, adopter, or contributor perspective behind this Epic
       placeholder: |
-        As an Origin Developer,
+        As an AMTS adopter,
         I want ...
         so that ...
     validations:
@@ -110,4 +108,4 @@ body:
       label: Notes
       description: Optional additional notes
       placeholder: Additional notes
-      
+

@@ -1,15 +1,17 @@
-name: ODTS Task
-description: Create a new ODTS Task
+name: ODTS Task for AMTS
+description: Create a new ODTS Task for the AMTS project
 title: "[Task] "
 body:
   - type: markdown
     attributes:
       value: |
-        # ODTS Task
+        # ODTS Task for AMTS
 
-        Use this form to create an ODTS Task.
+        This repository uses ODTS as its agile project-development framework.
 
-        Tasks represent concrete implementation work inside ODTS.
+        Tasks represent concrete work inside the AMTS project.
+
+        ODTS organizes the work. AMTS remains the specification being developed.
 
   - type: markdown
     attributes:
@@ -17,29 +19,25 @@ body:
         ## Task Types
 
         ### Work
-        Use **Work** for concrete implementation work that is actively being developed.
+        Use **Work** for concrete work that is actively being developed.
 
         Examples:
-        - creating templates
-        - implementing workflows
-        - adding project structures
-        - writing tests
-        - implementing automation
-        - refactoring code
-        - updating documentation structures
+        - refining specification text
+        - updating templates
+        - improving examples
+        - clarifying terminology
+        - reviewing compatibility
+        - improving translations or community material
 
         ### ToDo
         Use **ToDo** for deferred, postponed, or intentionally incomplete work.
 
         ToDos are typically used:
         - for known future improvements
-        - for technical debt
+        - for documentation debt
         - for deferred cleanup
         - for temporarily skipped work
-        - for implementation reminders
-        - for future architectural improvements
-
-        A ToDo does not necessarily mean unfinished work in the current implementation phase.
+        - for future compatibility improvements
 
   - type: dropdown
     id: task_type
@@ -87,7 +85,7 @@ body:
     attributes:
       label: Domain
       description: Optional Task Domain if different from the Parent Item
-      placeholder: "..."
+      placeholder: "Specification, Startup, Shutdown, Glossary, Templates, Community"
 
   - type: textarea
     id: summary
@@ -134,4 +132,4 @@ body:
       label: Notes
       description: Optional additional notes
       placeholder: Additional notes
-      
+

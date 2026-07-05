@@ -1,15 +1,17 @@
-name: ODTS Item
-description: Create a new ODTS Item
+name: ODTS Item for AMTS
+description: Create a new ODTS Item for the AMTS project
 title: "[Item] "
 body:
   - type: markdown
     attributes:
       value: |
-        # ODTS Item
+        # ODTS Item for AMTS
 
-        Use this form to create an ODTS Item.
+        This repository uses ODTS as its agile project-development framework.
 
-        Items represent concrete implementation areas below Epics and above Tasks.
+        Items represent concrete work areas below Epics and above Tasks.
+
+        ODTS organizes the work. AMTS remains the specification being developed.
 
   - type: markdown
     attributes:
@@ -17,19 +19,19 @@ body:
         ## Item Types
 
         ### Feature
-        Use **Feature** for planned functionality or implementation areas.
+        Use **Feature** for planned specification, documentation, template, or repository capabilities.
 
         ### FeatureRequest
         Use **FeatureRequest** for requested extensions or improvements.
 
         ### Bug
-        Use **Bug** for incorrect behavior that must be fixed.
+        Use **Bug** for incorrect, contradictory, or misleading behavior or documentation.
 
         ### Documentation
-        Use **Documentation** for documentation-related implementation work.
+        Use **Documentation** for documentation-related work.
 
         ### Test
-        Use **Test** for test-related implementation work.
+        Use **Test** for validation, review, examples, or conformance checks.
 
   - type: dropdown
     id: item_type
@@ -59,7 +61,7 @@ body:
     attributes:
       label: Domain
       description: Enter the Domain for this Item
-      placeholder: "Architecture"
+      placeholder: "Specification, Startup, Shutdown, Glossary, Templates, Community"
     validations:
       required: true
 
@@ -97,9 +99,9 @@ body:
     id: user_need
     attributes:
       label: User Need
-      description: Describe what the user wants or needs from this Item
+      description: Describe what the adopter, contributor, or maintainer needs from this Item
       placeholder: |
-        As an Origin Developer,
+        As an AMTS adopter,
         I want ...
         so that ...
     validations:
@@ -142,4 +144,4 @@ body:
       label: Notes
       description: Optional additional notes
       placeholder: Additional notes
-      
+
