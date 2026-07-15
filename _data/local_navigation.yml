@@ -1,0 +1,71 @@
+de:
+  navigation_label: AMTS-Navigation
+  project_label: Spezifikation
+  title: Akari AMTS
+  open_label: AMTS-Menü öffnen
+  back_label: Alle Nijida-Seiten
+  menu:
+    - id: overview
+      title: Überblick
+      description: Zweck, Begriffe und Einstieg
+      url: /de/
+    - id: specification
+      title: Spezifikation
+      description: Geltungsbereich und Kernmodell
+      url: /de/spezifikation/
+    - id: structure
+      title: Struktur
+      description: Space, Projektwissen und Archiv
+      url: /de/struktur/
+    - id: workflow
+      title: Arbeitsweise
+      description: Initialisierung, Übergabe und Integration
+      url: /de/arbeitsweise/
+
+en:
+  navigation_label: AMTS navigation
+  project_label: Specification
+  title: Akari AMTS
+  open_label: Open the AMTS menu
+  back_label: All Nijida pages
+  menu:
+    - id: overview
+      title: Overview
+      description: Purpose, terms, and entry point
+      url: /en/
+    - id: specification
+      title: Specification
+      description: Scope and core model
+      url: /en/specification/
+    - id: structure
+      title: Structure
+      description: Space, project knowledge, and archive
+      url: /en/structure/
+    - id: workflow
+      title: Workflow
+      description: Startup, handover, and integration
+      url: /en/workflow/
+
+ja:
+  navigation_label: AMTSナビゲーション
+  project_label: 仕様
+  title: Akari AMTS
+  open_label: AMTSメニューを開く
+  back_label: Nijida全体メニュー
+  menu:
+    - id: overview
+      title: 概要
+      description: 目的、用語、はじめ方
+      url: /ja/
+    - id: specification
+      title: 仕様
+      description: 適用範囲とコアモデル
+      url: /ja/specification/
+    - id: structure
+      title: 構造
+      description: Space、プロジェクト知識、アーカイブ
+      url: /ja/structure/
+    - id: workflow
+      title: ワークフロー
+      description: 初期化、引き継ぎ、連携
+      url: /ja/workflow/

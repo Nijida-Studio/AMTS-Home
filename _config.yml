@@ -1,0 +1,26 @@
+title: Akari AMTS
+description: Spezifikation für übertragbares Projektwissen, Initialisierung und Übergaben zwischen Assistenzumgebungen.
+lang: de
+url: https://amts.nijida.studio
+baseurl: ""
+project_id: amts
+
+owner:
+  name: Nijida Studio
+
+languages:
+  - code: de
+    label: DE
+  - code: en
+    label: EN
+  - code: ja
+    label: 日本語
+
+# During the initial site build, every Nijida page tests the development theme.
+remote_theme: Nijida-Studio/nijida-theme@themetest
+
+plugins:
+  - jekyll-remote-theme
+
+exclude:
+  - README.md
