@@ -1,6 +1,6 @@
 # Akari AMTS website
 
-This branch contains the Jekyll website published at `amts.nijida.studio`.
+This branch contains the Jekyll website published at `amts.nijida.de`.
 The specification and its maintained documentation remain on the `main`
 branch; website pages summarize and link to that source material.
 
