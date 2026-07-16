@@ -1,0 +1,15 @@
+odts:
+  version: "1.9.5"
+
+issue_metadata:
+  version:
+    id: odts_version
+    label: ODTS Version
+    source: odts.version
+    preserve_existing: true
+
+repository_feedback:
+  custom_property:
+    name: ODTS Status
+    required: false
+    source: derived

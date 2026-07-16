@@ -1,111 +1,39 @@
-name: ODTS Epic for AMTS
-description: Create a new ODTS Epic for the AMTS project
-title: "[Epic] "
+name: ODTS Epic
+description: Create a strategic goal, workflow goal, architectural direction, or requirement
+type: ODTS EPIC
 body:
   - type: markdown
     attributes:
       value: |
-        # ODTS Epic for AMTS
-
-        This repository uses ODTS as its agile project-development framework.
-
-        Use this form to create an ODTS Epic for AMTS specification, documentation, compatibility, community, or repository work.
-
-        ODTS organizes the work. AMTS remains the specification being developed.
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Epic Types
-
-        ### UserStory
-        Use **UserStory** for workflow-oriented, adopter-oriented, contributor-oriented, or process-oriented goals.
-
-        ### Requirement
-        Use **Requirement** for external constraints, specification requirements, compatibility expectations, or repository prerequisites.
-
-  - type: dropdown
-    id: epic_type
-    attributes:
-      label: Epic Type
-      description: Select the ODTS Epic Type
-      options:
-        - UserStory
-        - Requirement
-    validations:
-      required: true
+        Set **ODTS Epic Subtype** using GitHub's native issue fields. Set optional team planning fields when your team uses them.
 
   - type: input
-    id: related_epics
+    id: odts_version
     attributes:
-      label: Related Epics
-      description: Optional related Epic references
-      placeholder: "Epic #..., Epic #..."
-
-  - type: textarea
-    id: summary
-    attributes:
-      label: Summary
-      description: Short summary of the Epic
-      placeholder: Describe the Epic briefly
+      label: ODTS Version
+      description: The ODTS version under which this issue is created. Keep this value unchanged unless the issue is intentionally migrated.
+      value: "1.9.5"
     validations:
       required: true
 
   - type: textarea
-    id: scope
+    id: goal
     attributes:
-      label: Scope
-      description: Describe what this Epic applies to
-      placeholder: |
-        This applies especially to:
-        - ...
-        - ...
-        - ...
+      label: Goal
+      description: What outcome should this Epic achieve?
     validations:
       required: true
 
   - type: textarea
-    id: purpose
+    id: success
     attributes:
-      label: Purpose
-      description: Explain why this Epic exists
-      placeholder: Describe the purpose of this Epic
+      label: Success criteria
+      description: How will the organization know that the Epic is complete?
     validations:
       required: true
 
   - type: textarea
-    id: expected_evolution
+    id: context
     attributes:
-      label: Expected Evolution
-      description: Describe how this Epic may evolve
-      placeholder: |
-        1. ...
-        2. ...
-        3. ...
-
-  - type: textarea
-    id: limitations
-    attributes:
-      label: Limitations
-      description: Describe temporary limitations if relevant
-      placeholder: Describe temporary limitations
-
-  - type: textarea
-    id: user_story
-    attributes:
-      label: User Story
-      description: Describe the workflow, adopter, or contributor perspective behind this Epic
-      placeholder: |
-        As an AMTS adopter,
-        I want ...
-        so that ...
-    validations:
-      required: true
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: Notes
-      description: Optional additional notes
-      placeholder: Additional notes
-
+      label: Context
+      description: Optional constraints, related issues, or background.

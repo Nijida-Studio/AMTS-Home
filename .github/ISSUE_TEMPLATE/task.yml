@@ -1,107 +1,18 @@
-name: ODTS Task for AMTS
-description: Create a new ODTS Task for the AMTS project
-title: "[Task] "
+name: ODTS Task
+description: Create an actionable unit of work below an Item
+type: ODTS TASK
 body:
   - type: markdown
     attributes:
       value: |
-        # ODTS Task for AMTS
-
-        This repository uses ODTS as its agile project-development framework.
-
-        Tasks represent concrete work inside the AMTS project.
-
-        ODTS organizes the work. AMTS remains the specification being developed.
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Task Types
-
-        ### Work
-        Use **Work** for concrete work that is actively being developed.
-
-        Examples:
-        - refining specification text
-        - updating templates
-        - improving examples
-        - clarifying terminology
-        - reviewing compatibility
-        - improving translations or community material
-
-        ### ToDo
-        Use **ToDo** for deferred, postponed, or intentionally incomplete work.
-
-        ToDos are typically used:
-        - for known future improvements
-        - for documentation debt
-        - for deferred cleanup
-        - for temporarily skipped work
-        - for future compatibility improvements
-
-  - type: dropdown
-    id: task_type
-    attributes:
-      label: Task Type
-      description: Select the ODTS Task Type
-      options:
-        - Work
-        - ToDo
-    validations:
-      required: true
+        Set **ODTS Task Subtype** using GitHub's native issue fields. Set optional team planning fields when your team uses them. Attach the new Task to exactly one Parent Item.
 
   - type: input
-    id: parent_item
+    id: odts_version
     attributes:
-      label: Parent Item
-      description: Enter the Parent Item reference
-      placeholder: "Item #..."
-    validations:
-      required: true
-
-  - type: input
-    id: related_items
-    attributes:
-      label: Related Items
-      description: Optional related Item references
-      placeholder: "Item #..., Item #..."
-
-  - type: input
-    id: related_tasks
-    attributes:
-      label: Related Tasks
-      description: Optional related Task references
-      placeholder: "Task #..., Task #..."
-
-  - type: input
-    id: workflow_reviewer
-    attributes:
-      label: Workflow Reviewer
-      description: Reviewer responsible for the current workflow stage
-      placeholder: "@..."
-
-  - type: input
-    id: domain
-    attributes:
-      label: Domain
-      description: Optional Task Domain if different from the Parent Item
-      placeholder: "Specification, Startup, Shutdown, Glossary, Templates, Community"
-
-  - type: textarea
-    id: summary
-    attributes:
-      label: Summary
-      description: Short summary of the Task
-      placeholder: Describe the Task briefly
-    validations:
-      required: true
-
-  - type: textarea
-    id: purpose
-    attributes:
-      label: Purpose
-      description: Explain why this Task exists
-      placeholder: Describe the purpose of this Task
+      label: ODTS Version
+      description: The ODTS version under which this issue is created. Keep this value unchanged unless the issue is intentionally migrated.
+      value: "1.9.5"
     validations:
       required: true
 
@@ -109,27 +20,22 @@ body:
     id: work
     attributes:
       label: Work
-      description: Describe the concrete work steps
-      placeholder: |
-        1. Step one
-        2. Step two
-        3. Step three
+      description: What concrete work will be performed?
     validations:
       required: true
 
   - type: textarea
-    id: expected_result
+    id: done
     attributes:
-      label: Expected Result
-      description: Describe the expected outcome
-      placeholder: Describe the expected result
+      label: Done when
+      description: What observable result completes this Task?
     validations:
       required: true
 
   - type: textarea
-    id: notes
+    id: validation
     attributes:
-      label: Notes
-      description: Optional additional notes
-      placeholder: Additional notes
-
+      label: Documentation and validation plan
+      description: Which code documentation and tests will be created before implementation? If a test is not possible, explain why and name the alternative validation.
+    validations:
+      required: true
