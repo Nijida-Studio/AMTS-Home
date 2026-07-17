@@ -13,7 +13,7 @@ translations:
   ja: /ja/
 knowledge_sections:
   - title: AMTSを知る
-    excerpt: コアモデルから実際の利用まで、3つの入口から確認できます。
+    excerpt: コアモデル、実際の利用、AMTS 2の展望まで、4つの入口から確認できます。
     items:
       - title: 仕様
         text: 目的、適用範囲、実装に依存しない原則。
@@ -24,6 +24,9 @@ knowledge_sections:
       - title: ワークフロー
         text: アシスタント環境を確実に初期化し、作業を明確に引き継ぎます。
         url: /ja/workflow/
+      - title: AMTS 2の展望
+        text: 組み込みのチーム機能、保護された中核データ、分散した貢献。
+        url: /ja/amts-2-outlook/
 ---
 
 Akari AMTSは、会話、ツール、アシスタント環境が変わっても、有用な作業知識をプロジェクトに残すための仕様です。知識はプロジェクトが所有し、会話は一時的な作業セッションとして扱います。

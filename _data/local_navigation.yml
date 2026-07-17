@@ -21,6 +21,10 @@ de:
       title: Arbeitsweise
       description: Initialisierung, Übergabe und Integration
       url: /de/arbeitsweise/
+    - id: outlook
+      title: Ausblick AMTS 2
+      description: Teamfähigkeit und verteilte Beiträge
+      url: /de/ausblick-amts-2/
 
 en:
   navigation_label: AMTS navigation
@@ -45,6 +49,10 @@ en:
       title: Workflow
       description: Startup, handover, and integration
       url: /en/workflow/
+    - id: outlook
+      title: AMTS 2 outlook
+      description: Teamwork and distributed contributions
+      url: /en/amts-2-outlook/
 
 ja:
   navigation_label: AMTSナビゲーション
@@ -69,3 +77,7 @@ ja:
       title: ワークフロー
       description: 初期化、引き継ぎ、連携
       url: /ja/workflow/
+    - id: outlook
+      title: AMTS 2の展望
+      description: チーム機能と分散した貢献
+      url: /ja/amts-2-outlook/

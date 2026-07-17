@@ -13,7 +13,7 @@ translations:
   ja: /ja/
 knowledge_sections:
   - title: AMTS kennenlernen
-    excerpt: Drei Einstiege führen vom Kernmodell zur praktischen Verwendung.
+    excerpt: Vier Einstiege führen vom Kernmodell zur praktischen Verwendung und zum Ausblick auf AMTS 2.
     items:
       - title: Spezifikation
         text: Zweck, Geltungsbereich und implementierungsunabhängige Grundsätze.
@@ -24,6 +24,9 @@ knowledge_sections:
       - title: Arbeitsweise
         text: Assistenzumgebungen verlässlich initialisieren und Arbeit übergeben.
         url: /de/arbeitsweise/
+      - title: Ausblick auf AMTS 2
+        text: Eingebaute Teamfähigkeit, geschützte Kerndaten und verteilte Beiträge.
+        url: /de/ausblick-amts-2/
 ---
 
 Akari AMTS hilft Projekten, nützliches Arbeitswissen über einzelne Gespräche, Werkzeuge und Assistenzumgebungen hinweg zu erhalten. Das Projekt besitzt das Wissen; Gespräche sind zeitlich begrenzte Arbeitssitzungen.

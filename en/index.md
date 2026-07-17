@@ -13,7 +13,7 @@ translations:
   ja: /ja/
 knowledge_sections:
   - title: Explore AMTS
-    excerpt: Three short entries lead from the core model to practical use.
+    excerpt: Four short entries lead from the core model to practical use and the outlook for AMTS 2.
     items:
       - title: Specification
         text: Purpose, scope, and implementation-independent principles.
@@ -24,6 +24,9 @@ knowledge_sections:
       - title: Workflow
         text: Initialize assistant environments reliably and hand work over clearly.
         url: /en/workflow/
+      - title: Outlook for AMTS 2
+        text: Built-in teamwork, protected core data, and distributed contributions.
+        url: /en/amts-2-outlook/
 ---
 
 Akari AMTS helps projects preserve useful working knowledge across individual conversations, tools, and assistant environments. The project owns the knowledge; conversations are temporary working sessions.
