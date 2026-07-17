@@ -30,13 +30,19 @@ integrate them into the core data.
 
 ## Identity and responsibility
 
-AMTS 2 should identify members locally and map them to a stable member ID in
-the shared Space. Shared and local information remain strictly separated:
+AMTS 2 should identify members locally and map them to a stable public alias in
+the shared Space. The alias may be an already public GitHub username or a freely
+chosen nickname. Shared and local information remain strictly separated:
 
-- **Shared and synchronized:** member ID, display name, voluntarily published
-  official name, GitHub username, roles, and Space or project membership.
-- **Local only:** computer account name, local repository paths,
-  device-specific identities, and references to non-public Spaces.
+- **Shared and synchronized:** public alias, roles, and Space or project
+  membership.
+- **Local only:** official or private name, GitHub username and other account
+  names, computer account name, local repository paths, device-specific
+  identities, and references to other Spaces.
+
+A local alias table maps all known local names and accounts to the public alias.
+AMTS can therefore determine whether an assignment belongs to the current
+person without synchronizing private identity data.
 
 A Space names its maintainers. Every project also names its maintainers and
 members. Only authorized people may change the protected core data in their
@@ -54,9 +60,10 @@ projects/<Project>/governance.md
 projects/<Project>/contributions/<member-id>/
 ```
 
-A member's public directory contains only synchronized identity and
-contributions. Tasks, progress, results, and responses to feedback requests are
-stored there so several people do not need to overwrite the same working file.
+A member's public directory contains only the public alias, roles, and
+summarized contributions. Tasks, progress, results, and responses to feedback
+requests are stored there so several people do not need to overwrite the same
+working file.
 
 `governance.md` is currently a design candidate for maintainers, memberships,
 protected core data, and integration rules. Its name and exact format are not
@@ -69,10 +76,11 @@ It states its scope and the core data into which a result may later be
 integrated.
 
 GitHub Issues are planned as the first external task source. Repository, issue
-number, and assignee are mapped to an AMTS member ID. The issue remains the
-source of truth for its current status; the Space keeps only the AMTS-specific
-assignment, results, and integration information. This avoids creating a
-second, quickly outdated copy of the full issue.
+number, and assignee are mapped locally through the alias table to the public
+AMTS alias. The issue remains the source of truth for its current status; the
+Space keeps only summarized AMTS-specific assignment, results, and integration
+information. This avoids creating a second, quickly outdated copy of the full
+issue.
 
 ## Requesting opinions and feedback
 
@@ -82,6 +90,10 @@ initiator synthesizes the results and decides what enters the initiating work.
 Feedback does not replace the initiator's responsibility or authorization to
 change protected core data.
 
+Shared task and feedback areas contain summaries only. Complete conversations
+remain private local chats and become part of the synchronized Space only when
+they are explicitly shared.
+
 When entering a project, AMTS should therefore check whether the locally
 identified member has open tasks, expected contributions, or feedback requests.
 
@@ -89,10 +101,11 @@ identified member has open tasks, expected contributions, or feedback requests.
 
 Initialization or reinitialization should ask step by step for:
 
-1. preferred form of address and a stable member ID,
-2. voluntarily public name and GitHub username,
+1. preferred form of address and a public alias,
+2. local names and accounts, including a GitHub username, that map to this
+   alias,
 3. local computer identity and repository paths for each device,
-4. optional cross-references to other public Spaces,
+4. optional local cross-references to other Spaces,
 5. Space maintainers and members,
 6. and maintainers and members of existing or newly created projects.
 

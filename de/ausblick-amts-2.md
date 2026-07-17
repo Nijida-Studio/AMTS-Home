@@ -31,15 +31,20 @@ prüfen und anschließend bewusst in die Kerndaten übernehmen.
 
 ## Identität und Verantwortung
 
-AMTS 2 soll Mitglieder lokal erkennen und im gemeinsamen Space über eine
-stabile Mitglieds-ID zuordnen. Dabei werden öffentliche und lokale Angaben
-streng getrennt:
+AMTS 2 soll Mitglieder lokal erkennen und sie im gemeinsamen Space über einen
+stabilen öffentlichen Alias zuordnen. Dieser Alias kann ein ohnehin öffentlicher
+GitHub-Benutzername oder ein frei gewählter Spitzname sein. Dabei werden
+öffentliche und lokale Angaben streng getrennt:
 
-- **Gemeinsam und synchronisiert:** Mitglieds-ID, Anzeigename, freiwillig
-  veröffentlichter offizieller Name, GitHub-Benutzername, Rollen sowie Space-
-  und Projektzugehörigkeit.
-- **Nur lokal:** Benutzername des Rechners, lokale Repository-Pfade,
-  gerätespezifische Identitäten und Verweise auf nicht öffentliche Spaces.
+- **Gemeinsam und synchronisiert:** öffentlicher Alias, Rollen sowie Space- und
+  Projektzugehörigkeit.
+- **Nur lokal:** offizieller oder privater Name, GitHub-Benutzername und andere
+  Kontonamen, Benutzername des Rechners, lokale Repository-Pfade,
+  gerätespezifische Identitäten und Verweise auf andere Spaces.
+
+Eine lokale Alias-Tabelle ordnet alle bekannten lokalen Namen und Konten dem
+öffentlichen Alias zu. Dadurch kann AMTS feststellen, ob eine Aufgabe für die
+aktuelle Person bestimmt ist, ohne private Identitätsdaten zu synchronisieren.
 
 Ein Space benennt seine Verantwortlichen. Jedes Projekt benennt ebenfalls
 Verantwortliche und Mitglieder. Nur berechtigte Personen dürfen die geschützten
@@ -57,10 +62,10 @@ projects/<Project>/governance.md
 projects/<Project>/contributions/<member-id>/
 ```
 
-Das öffentliche Verzeichnis eines Mitglieds enthält nur synchronisierbare
-Identität und Beiträge. Aufgaben, Fortschritte, Ergebnisse und Antworten auf
-Feedback-Anfragen werden dort so abgelegt, dass nicht mehrere Personen dieselbe
-Arbeitsdatei überschreiben müssen.
+Das öffentliche Verzeichnis eines Mitglieds enthält nur den öffentlichen Alias,
+Rollen und zusammengefasste Beiträge. Aufgaben, Fortschritte, Ergebnisse und
+Antworten auf Feedback-Anfragen werden dort so abgelegt, dass nicht mehrere
+Personen dieselbe Arbeitsdatei überschreiben müssen.
 
 `governance.md` ist ein derzeitiger Entwurf für die Beschreibung von
 Verantwortlichen, Mitgliedschaften, geschützten Kerndaten und
@@ -73,11 +78,11 @@ ausdrücklich benannte federführende Person. Sie beschreibt ihren Scope und die
 Kerndaten, in die ein Ergebnis später einfließen kann.
 
 GitHub Issues sollen als erste externe Aufgabenquelle gelesen werden können.
-Repository, Issue-Nummer und Assignee werden einer AMTS-Mitglieds-ID
-zugeordnet. Das Issue bleibt die Quelle für seinen laufenden Status; der Space
-bewahrt nur die AMTS-spezifische Zuordnung, Ergebnisse und
-Zusammenführungsinformationen. Dadurch entsteht keine zweite, schnell
-veraltende Kopie des vollständigen Issues.
+Repository, Issue-Nummer und Assignee werden lokal über die Alias-Tabelle dem
+öffentlichen AMTS-Alias zugeordnet. Das Issue bleibt die Quelle für seinen
+laufenden Status; der Space bewahrt nur zusammengefasste AMTS-spezifische
+Zuordnung, Ergebnisse und Zusammenführungsinformationen. Dadurch entsteht keine
+zweite, schnell veraltende Kopie des vollständigen Issues.
 
 ## Meinungen und Feedback einholen
 
@@ -86,6 +91,10 @@ Jede angefragte Person schreibt ihre Antwort im eigenen Beitragsbereich. Der
 Initiator fasst die Ergebnisse zusammen und entscheidet, was in die eigene
 Arbeit einfließt. Feedback ersetzt weder die Verantwortung des Initiators noch
 die Freigabe geschützter Kerndaten.
+
+Im gemeinsamen Aufgaben- und Feedbackbereich stehen nur Zusammenfassungen.
+Vollständige Gespräche bleiben als private lokale Chats erhalten und werden nur
+dann Teil des synchronisierten Space, wenn sie ausdrücklich geteilt werden.
 
 Beim Einstieg in ein Projekt soll AMTS deshalb prüfen, ob für das lokal
 erkannte Mitglied offene Aufgaben, erwartete Beiträge oder Feedback-Anfragen
@@ -96,10 +105,11 @@ vorliegen.
 Die Initialisierung oder Reinitialisierung soll schrittweise nach Folgendem
 fragen:
 
-1. gewünschte Anrede und stabile Mitglieds-ID,
-2. freiwillig öffentlicher Name und GitHub-Benutzername,
+1. gewünschte Anrede und öffentlicher Alias,
+2. lokale Namen und Konten, einschließlich GitHub-Benutzername, die diesem
+   Alias zugeordnet werden,
 3. lokale Rechneridentität und Repository-Pfade je Gerät,
-4. optionale Querverweise auf weitere öffentliche Spaces,
+4. optionale lokale Querverweise auf weitere Spaces,
 5. Verantwortliche und Mitglieder des Space,
 6. Verantwortliche und Mitglieder bereits vorhandener oder neu eingerichteter
    Projekte.
